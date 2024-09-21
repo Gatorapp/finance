@@ -11,7 +11,6 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
-import { handle } from "hono/vercel";
 
 type Props = {
     id: string;

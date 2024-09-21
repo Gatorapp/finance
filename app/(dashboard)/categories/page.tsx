@@ -3,7 +3,6 @@
 import { Loader2, Plus } from "lucide-react";
 import { useNewCategory } from "@/features/categories/hooks/use-new-category";
 import { useGetCategories } from "@/features/categories/api/use-get-categories";
-import { useGetAccount } from "@/features/accounts/api/use-get-account";
 import { useBulkDeleteCategories } from "@/features/categories/api/use-bulk-delete-categories";
 import { Button } from "@/components/ui/button";
 import { DataTable } from "@/components/data-table";
@@ -62,11 +61,11 @@ const CategoriesPage = () => {
                     filterKey="name"
                     columns={columns} 
                     data={categories}
-                    onDelete={(row: any[]) => {
-                        const ids = row.map((r: { original: { id: any; }; }) => r.original.id);
+                    onDelete={(row) => {
+                        const ids = row.map((r) => r.original.id);
                         deleteCategories.mutate({ ids });
                     }}
-                    disabled={false} 
+                    disabled={isDisabled} 
                 />    
                 </CardContent>              
             </Card>
