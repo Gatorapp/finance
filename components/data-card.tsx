@@ -1,7 +1,7 @@
-import { IconTree, IconType } from "react-icons/lib";
+import { IconType } from "react-icons/lib";
 import { Skeleton } from "./ui/skeleton";
 import { VariantProps, cva } from "class-variance-authority";
-import { CountUp } from "@/components/conunt-up";
+import { CountUp } from "@/components/count-up";
 import { cn, formatCurrency, formatPercentage } from "@/lib/utils";
 import { 
     Card,

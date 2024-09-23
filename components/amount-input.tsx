@@ -1,5 +1,5 @@
 import CurrencyInput from "react-currency-input-field";
-import { Info, MinusCircle, PlaySquare, PlusCircle } from "lucide-react";
+import { Info, MinusCircle,  PlusCircle } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import {

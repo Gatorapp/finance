@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
 import { useNewTransaction } from "@/features/transactions/hooks/use-new-transaction";

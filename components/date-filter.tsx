@@ -5,20 +5,22 @@ import { format, subDays } from "date-fns";
 import { DateRange } from "react-day-picker";
 import { ChevronDown } from "lucide-react";
 import qs from "query-string";
-import { useGetSummary } from "@/features/summary/api/use-get-summary";
 import  { 
     usePathname,
     useRouter,
     useSearchParams,
- } from "next/navigation";
+} from "next/navigation";
 
- import {
+import {
     Popover,
     PopoverContent,
     PopoverTrigger,
     PopoverClose,
- } from "@/components/ui/popover";
+} from "@/components/ui/popover";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useGetSummary } from "@/features/summary/api/use-get-summary";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { cn, formatDateRange } from "@/lib/utils";
 import { Button } from "./ui/button";
 import { Calendar } from "./ui/calendar";

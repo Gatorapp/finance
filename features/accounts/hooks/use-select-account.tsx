@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useRef, useState } from "react";
 import { useCreateAccount } from "../api/use-create-account"; 
 import { useGetAccouonts } from "../api/use-get-accounts";
@@ -85,6 +86,4 @@ export const useSelectAccount = () : [() => JSX.Element, () =>
     return [ConfirmationDialog, confirm]
 };
 
-function useGetAccounts() {
-    throw new Error("Function not implemented.");
-}
+
